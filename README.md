@@ -28,9 +28,7 @@ The Shorecrest-Connect App is an iOS application that will offer students with m
 
 ## How to Contribute
 
-To contribute to this project, please follow the instructions below. If you have any difficulties, please [email us](mailto:simon.acker@icloud.com).
-
-1. git clone https://
+To contribute to this project, please follow this [guide] https://akrabat.com/the-beginners-guide-to-contributing-to-a-github-project/.
 
 ## Change-log (by version)
 

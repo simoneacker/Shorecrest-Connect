@@ -1,0 +1,13 @@
+platform :ios, '10.3’
+use_frameworks!
+target “SC-Connect” do
+  pod 'Google'
+  pod 'Google/SignIn'
+  pod 'GoogleAPIClientForREST/Calendar'
+  pod 'AWSS3'
+  pod 'SlackTextViewController'
+  pod 'BRYXBanner'
+  pod 'Socket.IO-Client-Swift'
+  pod 'JSONWebToken'
+  pod 'Eureka'
+end

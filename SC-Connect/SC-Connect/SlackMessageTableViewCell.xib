@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="60" id="KGk-i7-Jjw" customClass="SlackMessageTableViewCell" customModule="sc_connect_ios_v2_testbed" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="59.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qhh-PO-9UT">
+                        <rect key="frame" x="8" y="8" width="37.5" height="18"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                        <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G34-PF-L4X">
+                        <rect key="frame" x="8" y="30" width="304" height="21.5"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ouW-iR-EaU">
+                        <rect key="frame" x="53.5" y="8" width="37.5" height="18"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="ouW-iR-EaU" secondAttribute="trailing" id="2eR-eh-XpG"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="G34-PF-L4X" secondAttribute="leading" id="3GW-CV-dN0"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="G34-PF-L4X" secondAttribute="trailing" id="4Np-DQ-T47"/>
+                    <constraint firstItem="ouW-iR-EaU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="6wR-im-29l"/>
+                    <constraint firstItem="ouW-iR-EaU" firstAttribute="leading" secondItem="qhh-PO-9UT" secondAttribute="trailing" constant="8" id="DHN-9l-rv8"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="G34-PF-L4X" secondAttribute="bottom" id="Gxe-Yc-pvH"/>
+                    <constraint firstItem="G34-PF-L4X" firstAttribute="top" secondItem="ouW-iR-EaU" secondAttribute="bottom" constant="4" id="WTl-QH-cNq"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="qhh-PO-9UT" secondAttribute="leading" id="dFJ-7H-BNG"/>
+                    <constraint firstItem="G34-PF-L4X" firstAttribute="top" secondItem="qhh-PO-9UT" secondAttribute="bottom" constant="4" id="p01-wg-ECC"/>
+                    <constraint firstAttribute="topMargin" secondItem="qhh-PO-9UT" secondAttribute="top" id="yq5-2T-C7f"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="dateLabel" destination="ouW-iR-EaU" id="dNw-Ra-FYE"/>
+                <outlet property="messageLabel" destination="G34-PF-L4X" id="jTH-KA-XfD"/>
+                <outlet property="usernameLabel" destination="qhh-PO-9UT" id="qGW-4X-FI1"/>
+            </connections>
+            <point key="canvasLocation" x="-252" y="63"/>
+        </tableViewCell>
+    </objects>
+</document>

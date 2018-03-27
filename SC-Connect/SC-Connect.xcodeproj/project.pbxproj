@@ -1,0 +1,799 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0290E0AF1EF6F80B002D6768 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0290E0AE1EF6F80B002D6768 /* GoogleService-Info.plist */; };
+		02D876DC1EF6F0C100F3E3CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02D876DA1EF6F0C100F3E3CD /* Main.storyboard */; };
+		02D876E11EF6F0C100F3E3CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02D876DF1EF6F0C100F3E3CD /* LaunchScreen.storyboard */; };
+		02D876FC1EF6F5DF00F3E3CD /* GoogleCalendarManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D876F31EF6F5DE00F3E3CD /* GoogleCalendarManager.swift */; };
+		02D876FD1EF6F5DF00F3E3CD /* GoogleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D876F41EF6F5DE00F3E3CD /* GoogleManager.swift */; };
+		02D876FE1EF6F5DF00F3E3CD /* GraduationYearManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D876F51EF6F5DE00F3E3CD /* GraduationYearManager.swift */; };
+		02D876FF1EF6F5DF00F3E3CD /* JWTManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D876F61EF6F5DE00F3E3CD /* JWTManager.swift */; };
+		02D877001EF6F5DF00F3E3CD /* SubscriptionsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D876F71EF6F5DF00F3E3CD /* SubscriptionsManager.swift */; };
+		02D877011EF6F5DF00F3E3CD /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D876F81EF6F5DF00F3E3CD /* UserManager.swift */; };
+		02D877021EF6F5DF00F3E3CD /* AWSManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D876F91EF6F5DF00F3E3CD /* AWSManager.swift */; };
+		02D877031EF6F5DF00F3E3CD /* MessagesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D876FA1EF6F5DF00F3E3CD /* MessagesManager.swift */; };
+		02D877041EF6F5DF00F3E3CD /* InAppNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D876FB1EF6F5DF00F3E3CD /* InAppNotificationManager.swift */; };
+		02D8770B1EF6F5ED00F3E3CD /* SCConnectAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D877051EF6F5ED00F3E3CD /* SCConnectAPI.swift */; };
+		02D8770C1EF6F5ED00F3E3CD /* SCConnectRESTAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D877061EF6F5ED00F3E3CD /* SCConnectRESTAPI.swift */; };
+		02D8770D1EF6F5ED00F3E3CD /* AuthNetworkAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D877071EF6F5ED00F3E3CD /* AuthNetworkAPI.swift */; };
+		02D8770E1EF6F5ED00F3E3CD /* NetworkAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D877081EF6F5ED00F3E3CD /* NetworkAPI.swift */; };
+		02D8770F1EF6F5ED00F3E3CD /* SCConnectSocketAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D877091EF6F5ED00F3E3CD /* SCConnectSocketAPI.swift */; };
+		02D877101EF6F5ED00F3E3CD /* SocketIOManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D8770A1EF6F5ED00F3E3CD /* SocketIOManager.swift */; };
+		02D8771D1EF6F5F800F3E3CD /* MessageModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D877111EF6F5F800F3E3CD /* MessageModels.swift */; };
+		02D8771E1EF6F5F800F3E3CD /* TagModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D877121EF6F5F800F3E3CD /* TagModel.swift */; };
+		02D8771F1EF6F5F800F3E3CD /* GoogleUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D877131EF6F5F800F3E3CD /* GoogleUserModel.swift */; };
+		02D877201EF6F5F800F3E3CD /* EventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D877141EF6F5F800F3E3CD /* EventModel.swift */; };
+		02D877211EF6F5F800F3E3CD /* JSONWebTokenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D877151EF6F5F800F3E3CD /* JSONWebTokenModel.swift */; };
+		02D877221EF6F5F800F3E3CD /* LeaderboardScoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D877161EF6F5F800F3E3CD /* LeaderboardScoreModel.swift */; };
+		02D877231EF6F5F800F3E3CD /* ScheduledSportsGameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D877171EF6F5F800F3E3CD /* ScheduledSportsGameModel.swift */; };
+		02D877241EF6F5F800F3E3CD /* SportsGameResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D877181EF6F5F800F3E3CD /* SportsGameResultModel.swift */; };
+		02D877251EF6F5F800F3E3CD /* ModeratorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D877191EF6F5F800F3E3CD /* ModeratorModel.swift */; };
+		02D877261EF6F5F800F3E3CD /* FanCamImageRecordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D8771A1EF6F5F800F3E3CD /* FanCamImageRecordModel.swift */; };
+		02D877271EF6F5F800F3E3CD /* ClubModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D8771B1EF6F5F800F3E3CD /* ClubModel.swift */; };
+		02D877281EF6F5F800F3E3CD /* LeaderboardTotalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D8771C1EF6F5F800F3E3CD /* LeaderboardTotalModel.swift */; };
+		02D8772A1EF6F5FF00F3E3CD /* LocationRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D877291EF6F5FF00F3E3CD /* LocationRow.swift */; };
+		02D877381EF6F61800F3E3CD /* SlackMessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D8772B1EF6F61800F3E3CD /* SlackMessageTableViewCell.swift */; };
+		02D877391EF6F61800F3E3CD /* SlackMessageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02D8772C1EF6F61800F3E3CD /* SlackMessageTableViewCell.xib */; };
+		02D8773A1EF6F61800F3E3CD /* SlackPhotoMessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D8772D1EF6F61800F3E3CD /* SlackPhotoMessageTableViewCell.swift */; };
+		02D8773B1EF6F61800F3E3CD /* SlackPhotoMessageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02D8772E1EF6F61800F3E3CD /* SlackPhotoMessageTableViewCell.xib */; };
+		02D8773C1EF6F61800F3E3CD /* TagPreviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D8772F1EF6F61800F3E3CD /* TagPreviewTableViewCell.swift */; };
+		02D8773D1EF6F61800F3E3CD /* ColorPickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D877301EF6F61800F3E3CD /* ColorPickerTableViewCell.swift */; };
+		02D8773E1EF6F61800F3E3CD /* CheckInButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D877311EF6F61800F3E3CD /* CheckInButtonTableViewCell.swift */; };
+		02D8773F1EF6F61800F3E3CD /* EventInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D877321EF6F61800F3E3CD /* EventInfoTableViewCell.swift */; };
+		02D877401EF6F61800F3E3CD /* MapTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D877331EF6F61800F3E3CD /* MapTableViewCell.swift */; };
+		02D877411EF6F61800F3E3CD /* SportsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D877341EF6F61800F3E3CD /* SportsTableViewCell.swift */; };
+		02D877421EF6F61800F3E3CD /* FanCamImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D877351EF6F61800F3E3CD /* FanCamImageCollectionViewCell.swift */; };
+		02D877431EF6F61800F3E3CD /* HomepageImageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D877361EF6F61800F3E3CD /* HomepageImageButton.swift */; };
+		02D877441EF6F61800F3E3CD /* ClubInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D877371EF6F61800F3E3CD /* ClubInfoTableViewCell.swift */; };
+		02D877691EF6F64B00F3E3CD /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D877451EF6F64B00F3E3CD /* WelcomeViewController.swift */; };
+		02D8776A1EF6F64B00F3E3CD /* SignInInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D877461EF6F64B00F3E3CD /* SignInInfoViewController.swift */; };
+		02D8776B1EF6F64B00F3E3CD /* NotificationsInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D877471EF6F64B00F3E3CD /* NotificationsInfoViewController.swift */; };
+		02D8776C1EF6F64B00F3E3CD /* BasicUsageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D877481EF6F64B00F3E3CD /* BasicUsageViewController.swift */; };
+		02D8776D1EF6F64B00F3E3CD /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D877491EF6F64B00F3E3CD /* NavigationViewController.swift */; };
+		02D8776E1EF6F64B00F3E3CD /* HomepageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D8774A1EF6F64B00F3E3CD /* HomepageViewController.swift */; };
+		02D8776F1EF6F64B00F3E3CD /* TagBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D8774B1EF6F64B00F3E3CD /* TagBrowserViewController.swift */; };
+		02D877701EF6F64B00F3E3CD /* TagSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D8774C1EF6F64B00F3E3CD /* TagSearchViewController.swift */; };
+		02D877711EF6F64B00F3E3CD /* TagInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D8774D1EF6F64B00F3E3CD /* TagInfoViewController.swift */; };
+		02D877721EF6F64B00F3E3CD /* SlackMessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D8774E1EF6F64B00F3E3CD /* SlackMessagesViewController.swift */; };
+		02D877731EF6F64B00F3E3CD /* MediaUploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D8774F1EF6F64B00F3E3CD /* MediaUploadViewController.swift */; };
+		02D877741EF6F64B00F3E3CD /* EventBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D877501EF6F64B00F3E3CD /* EventBrowserViewController.swift */; };
+		02D877751EF6F64B00F3E3CD /* EventInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D877511EF6F64B00F3E3CD /* EventInfoViewController.swift */; };
+		02D877761EF6F64B00F3E3CD /* CheckedInListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D877521EF6F64B00F3E3CD /* CheckedInListViewController.swift */; };
+		02D877771EF6F64B00F3E3CD /* PhotoDisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D877531EF6F64B00F3E3CD /* PhotoDisplayViewController.swift */; };
+		02D877781EF6F64B00F3E3CD /* SportsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D877541EF6F64B00F3E3CD /* SportsTableViewController.swift */; };
+		02D877791EF6F64B00F3E3CD /* SportsSelectionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D877551EF6F64B00F3E3CD /* SportsSelectionTableViewController.swift */; };
+		02D8777A1EF6F64B00F3E3CD /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D877561EF6F64B00F3E3CD /* SettingsTableViewController.swift */; };
+		02D8777B1EF6F64B00F3E3CD /* GraduationYearSelectedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D877571EF6F64B00F3E3CD /* GraduationYearSelectedTableViewController.swift */; };
+		02D8777C1EF6F64B00F3E3CD /* AboutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D877581EF6F64B00F3E3CD /* AboutTableViewController.swift */; };
+		02D8777D1EF6F64B00F3E3CD /* FanCamCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D877591EF6F64B00F3E3CD /* FanCamCollectionViewController.swift */; };
+		02D8777E1EF6F64B00F3E3CD /* FanCamMediaUploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D8775A1EF6F64B00F3E3CD /* FanCamMediaUploadViewController.swift */; };
+		02D8777F1EF6F64B00F3E3CD /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D8775B1EF6F64B00F3E3CD /* WebViewController.swift */; };
+		02D877801EF6F64B00F3E3CD /* ClubMeetingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D8775C1EF6F64B00F3E3CD /* ClubMeetingsTableViewController.swift */; };
+		02D877811EF6F64B00F3E3CD /* DayOfTheWeekSelectionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D8775D1EF6F64B00F3E3CD /* DayOfTheWeekSelectionTableViewController.swift */; };
+		02D877821EF6F64B00F3E3CD /* ClubInfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D8775E1EF6F64B00F3E3CD /* ClubInfoTableViewController.swift */; };
+		02D877831EF6F64B00F3E3CD /* ModeratorTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D8775F1EF6F64B00F3E3CD /* ModeratorTableViewController.swift */; };
+		02D877841EF6F64B00F3E3CD /* CreateEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D877601EF6F64B00F3E3CD /* CreateEventViewController.swift */; };
+		02D877851EF6F64B00F3E3CD /* FlaggedMessagesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D877611EF6F64B00F3E3CD /* FlaggedMessagesTableViewController.swift */; };
+		02D877861EF6F64B00F3E3CD /* ManageClubsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D877621EF6F64B00F3E3CD /* ManageClubsTableViewController.swift */; };
+		02D877871EF6F64B00F3E3CD /* CreateClubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D877631EF6F64B00F3E3CD /* CreateClubViewController.swift */; };
+		02D877881EF6F64B00F3E3CD /* EditClubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D877641EF6F64B00F3E3CD /* EditClubViewController.swift */; };
+		02D877891EF6F64B00F3E3CD /* ManageTagsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D877651EF6F64B00F3E3CD /* ManageTagsTableViewController.swift */; };
+		02D8778A1EF6F64B00F3E3CD /* CreateTagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D877661EF6F64B00F3E3CD /* CreateTagViewController.swift */; };
+		02D8778B1EF6F64B00F3E3CD /* AddModeratorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D877671EF6F64B00F3E3CD /* AddModeratorViewController.swift */; };
+		02D8778C1EF6F64B00F3E3CD /* ManageModeratorsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D877681EF6F64B00F3E3CD /* ManageModeratorsTableViewController.swift */; };
+		02D877911EF6F65800F3E3CD /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D8778D1EF6F65800F3E3CD /* Logging.swift */; };
+		02D877921EF6F65800F3E3CD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D8778E1EF6F65800F3E3CD /* Constants.swift */; };
+		02D877931EF6F65800F3E3CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D8778F1EF6F65800F3E3CD /* AppDelegate.swift */; };
+		02D877941EF6F65800F3E3CD /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D877901EF6F65800F3E3CD /* Helper.swift */; };
+		02D877961EF6F66B00F3E3CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02D877951EF6F66B00F3E3CD /* Assets.xcassets */; };
+		FBF873E36BE5F558B13606BC /* Pods_SC_Connect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDE6137A4CEC6EA096CEE44E /* Pods_SC_Connect.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0290E0AE1EF6F80B002D6768 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		02D876D31EF6F0C100F3E3CD /* SC-Connect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SC-Connect.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		02D876DB1EF6F0C100F3E3CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		02D876E01EF6F0C100F3E3CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		02D876E21EF6F0C100F3E3CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "SC-Connect/Info.plist"; sourceTree = "<group>"; };
+		02D876E81EF6F13700F3E3CD /* SC-Connect.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = "SC-Connect.entitlements"; path = "SC-Connect/SC-Connect.entitlements"; sourceTree = "<group>"; };
+		02D876F31EF6F5DE00F3E3CD /* GoogleCalendarManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleCalendarManager.swift; sourceTree = "<group>"; };
+		02D876F41EF6F5DE00F3E3CD /* GoogleManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleManager.swift; sourceTree = "<group>"; };
+		02D876F51EF6F5DE00F3E3CD /* GraduationYearManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraduationYearManager.swift; sourceTree = "<group>"; };
+		02D876F61EF6F5DE00F3E3CD /* JWTManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWTManager.swift; sourceTree = "<group>"; };
+		02D876F71EF6F5DF00F3E3CD /* SubscriptionsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscriptionsManager.swift; sourceTree = "<group>"; };
+		02D876F81EF6F5DF00F3E3CD /* UserManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		02D876F91EF6F5DF00F3E3CD /* AWSManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AWSManager.swift; sourceTree = "<group>"; };
+		02D876FA1EF6F5DF00F3E3CD /* MessagesManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesManager.swift; sourceTree = "<group>"; };
+		02D876FB1EF6F5DF00F3E3CD /* InAppNotificationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InAppNotificationManager.swift; sourceTree = "<group>"; };
+		02D877051EF6F5ED00F3E3CD /* SCConnectAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCConnectAPI.swift; sourceTree = "<group>"; };
+		02D877061EF6F5ED00F3E3CD /* SCConnectRESTAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCConnectRESTAPI.swift; sourceTree = "<group>"; };
+		02D877071EF6F5ED00F3E3CD /* AuthNetworkAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthNetworkAPI.swift; sourceTree = "<group>"; };
+		02D877081EF6F5ED00F3E3CD /* NetworkAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkAPI.swift; sourceTree = "<group>"; };
+		02D877091EF6F5ED00F3E3CD /* SCConnectSocketAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCConnectSocketAPI.swift; sourceTree = "<group>"; };
+		02D8770A1EF6F5ED00F3E3CD /* SocketIOManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketIOManager.swift; sourceTree = "<group>"; };
+		02D877111EF6F5F800F3E3CD /* MessageModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageModels.swift; sourceTree = "<group>"; };
+		02D877121EF6F5F800F3E3CD /* TagModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagModel.swift; sourceTree = "<group>"; };
+		02D877131EF6F5F800F3E3CD /* GoogleUserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleUserModel.swift; sourceTree = "<group>"; };
+		02D877141EF6F5F800F3E3CD /* EventModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventModel.swift; sourceTree = "<group>"; };
+		02D877151EF6F5F800F3E3CD /* JSONWebTokenModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONWebTokenModel.swift; sourceTree = "<group>"; };
+		02D877161EF6F5F800F3E3CD /* LeaderboardScoreModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaderboardScoreModel.swift; sourceTree = "<group>"; };
+		02D877171EF6F5F800F3E3CD /* ScheduledSportsGameModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduledSportsGameModel.swift; sourceTree = "<group>"; };
+		02D877181EF6F5F800F3E3CD /* SportsGameResultModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SportsGameResultModel.swift; sourceTree = "<group>"; };
+		02D877191EF6F5F800F3E3CD /* ModeratorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModeratorModel.swift; sourceTree = "<group>"; };
+		02D8771A1EF6F5F800F3E3CD /* FanCamImageRecordModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FanCamImageRecordModel.swift; sourceTree = "<group>"; };
+		02D8771B1EF6F5F800F3E3CD /* ClubModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClubModel.swift; sourceTree = "<group>"; };
+		02D8771C1EF6F5F800F3E3CD /* LeaderboardTotalModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaderboardTotalModel.swift; sourceTree = "<group>"; };
+		02D877291EF6F5FF00F3E3CD /* LocationRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationRow.swift; sourceTree = "<group>"; };
+		02D8772B1EF6F61800F3E3CD /* SlackMessageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlackMessageTableViewCell.swift; sourceTree = "<group>"; };
+		02D8772C1EF6F61800F3E3CD /* SlackMessageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SlackMessageTableViewCell.xib; sourceTree = "<group>"; };
+		02D8772D1EF6F61800F3E3CD /* SlackPhotoMessageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlackPhotoMessageTableViewCell.swift; sourceTree = "<group>"; };
+		02D8772E1EF6F61800F3E3CD /* SlackPhotoMessageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SlackPhotoMessageTableViewCell.xib; sourceTree = "<group>"; };
+		02D8772F1EF6F61800F3E3CD /* TagPreviewTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagPreviewTableViewCell.swift; sourceTree = "<group>"; };
+		02D877301EF6F61800F3E3CD /* ColorPickerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPickerTableViewCell.swift; sourceTree = "<group>"; };
+		02D877311EF6F61800F3E3CD /* CheckInButtonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckInButtonTableViewCell.swift; sourceTree = "<group>"; };
+		02D877321EF6F61800F3E3CD /* EventInfoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventInfoTableViewCell.swift; sourceTree = "<group>"; };
+		02D877331EF6F61800F3E3CD /* MapTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapTableViewCell.swift; sourceTree = "<group>"; };
+		02D877341EF6F61800F3E3CD /* SportsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SportsTableViewCell.swift; sourceTree = "<group>"; };
+		02D877351EF6F61800F3E3CD /* FanCamImageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FanCamImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		02D877361EF6F61800F3E3CD /* HomepageImageButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomepageImageButton.swift; sourceTree = "<group>"; };
+		02D877371EF6F61800F3E3CD /* ClubInfoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClubInfoTableViewCell.swift; sourceTree = "<group>"; };
+		02D877451EF6F64B00F3E3CD /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		02D877461EF6F64B00F3E3CD /* SignInInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInInfoViewController.swift; sourceTree = "<group>"; };
+		02D877471EF6F64B00F3E3CD /* NotificationsInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsInfoViewController.swift; sourceTree = "<group>"; };
+		02D877481EF6F64B00F3E3CD /* BasicUsageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicUsageViewController.swift; sourceTree = "<group>"; };
+		02D877491EF6F64B00F3E3CD /* NavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
+		02D8774A1EF6F64B00F3E3CD /* HomepageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomepageViewController.swift; sourceTree = "<group>"; };
+		02D8774B1EF6F64B00F3E3CD /* TagBrowserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagBrowserViewController.swift; sourceTree = "<group>"; };
+		02D8774C1EF6F64B00F3E3CD /* TagSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagSearchViewController.swift; sourceTree = "<group>"; };
+		02D8774D1EF6F64B00F3E3CD /* TagInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagInfoViewController.swift; sourceTree = "<group>"; };
+		02D8774E1EF6F64B00F3E3CD /* SlackMessagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlackMessagesViewController.swift; sourceTree = "<group>"; };
+		02D8774F1EF6F64B00F3E3CD /* MediaUploadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaUploadViewController.swift; sourceTree = "<group>"; };
+		02D877501EF6F64B00F3E3CD /* EventBrowserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventBrowserViewController.swift; sourceTree = "<group>"; };
+		02D877511EF6F64B00F3E3CD /* EventInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventInfoViewController.swift; sourceTree = "<group>"; };
+		02D877521EF6F64B00F3E3CD /* CheckedInListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckedInListViewController.swift; sourceTree = "<group>"; };
+		02D877531EF6F64B00F3E3CD /* PhotoDisplayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoDisplayViewController.swift; sourceTree = "<group>"; };
+		02D877541EF6F64B00F3E3CD /* SportsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SportsTableViewController.swift; sourceTree = "<group>"; };
+		02D877551EF6F64B00F3E3CD /* SportsSelectionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SportsSelectionTableViewController.swift; sourceTree = "<group>"; };
+		02D877561EF6F64B00F3E3CD /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		02D877571EF6F64B00F3E3CD /* GraduationYearSelectedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraduationYearSelectedTableViewController.swift; sourceTree = "<group>"; };
+		02D877581EF6F64B00F3E3CD /* AboutTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutTableViewController.swift; sourceTree = "<group>"; };
+		02D877591EF6F64B00F3E3CD /* FanCamCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FanCamCollectionViewController.swift; sourceTree = "<group>"; };
+		02D8775A1EF6F64B00F3E3CD /* FanCamMediaUploadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FanCamMediaUploadViewController.swift; sourceTree = "<group>"; };
+		02D8775B1EF6F64B00F3E3CD /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		02D8775C1EF6F64B00F3E3CD /* ClubMeetingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClubMeetingsTableViewController.swift; sourceTree = "<group>"; };
+		02D8775D1EF6F64B00F3E3CD /* DayOfTheWeekSelectionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayOfTheWeekSelectionTableViewController.swift; sourceTree = "<group>"; };
+		02D8775E1EF6F64B00F3E3CD /* ClubInfoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClubInfoTableViewController.swift; sourceTree = "<group>"; };
+		02D8775F1EF6F64B00F3E3CD /* ModeratorTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModeratorTableViewController.swift; sourceTree = "<group>"; };
+		02D877601EF6F64B00F3E3CD /* CreateEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateEventViewController.swift; sourceTree = "<group>"; };
+		02D877611EF6F64B00F3E3CD /* FlaggedMessagesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlaggedMessagesTableViewController.swift; sourceTree = "<group>"; };
+		02D877621EF6F64B00F3E3CD /* ManageClubsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManageClubsTableViewController.swift; sourceTree = "<group>"; };
+		02D877631EF6F64B00F3E3CD /* CreateClubViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateClubViewController.swift; sourceTree = "<group>"; };
+		02D877641EF6F64B00F3E3CD /* EditClubViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditClubViewController.swift; sourceTree = "<group>"; };
+		02D877651EF6F64B00F3E3CD /* ManageTagsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManageTagsTableViewController.swift; sourceTree = "<group>"; };
+		02D877661EF6F64B00F3E3CD /* CreateTagViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateTagViewController.swift; sourceTree = "<group>"; };
+		02D877671EF6F64B00F3E3CD /* AddModeratorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddModeratorViewController.swift; sourceTree = "<group>"; };
+		02D877681EF6F64B00F3E3CD /* ManageModeratorsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManageModeratorsTableViewController.swift; sourceTree = "<group>"; };
+		02D8778D1EF6F65800F3E3CD /* Logging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logging.swift; sourceTree = "<group>"; };
+		02D8778E1EF6F65800F3E3CD /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		02D8778F1EF6F65800F3E3CD /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		02D877901EF6F65800F3E3CD /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		02D877951EF6F66B00F3E3CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		276A471D62E046CE1E856BF4 /* Pods-SC-Connect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SC-Connect.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SC-Connect/Pods-SC-Connect.debug.xcconfig"; sourceTree = "<group>"; };
+		4D443B977D2A6AAC9EDA40D7 /* Pods-SC-Connect.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SC-Connect.release.xcconfig"; path = "Pods/Target Support Files/Pods-SC-Connect/Pods-SC-Connect.release.xcconfig"; sourceTree = "<group>"; };
+		EDE6137A4CEC6EA096CEE44E /* Pods_SC_Connect.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SC_Connect.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		02D876D01EF6F0C100F3E3CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBF873E36BE5F558B13606BC /* Pods_SC_Connect.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0220718F1EF89716008973AE /* REST */ = {
+			isa = PBXGroup;
+			children = (
+				02D877061EF6F5ED00F3E3CD /* SCConnectRESTAPI.swift */,
+				02D877071EF6F5ED00F3E3CD /* AuthNetworkAPI.swift */,
+				02D877081EF6F5ED00F3E3CD /* NetworkAPI.swift */,
+			);
+			name = REST;
+			sourceTree = "<group>";
+		};
+		022071901EF89727008973AE /* Socket */ = {
+			isa = PBXGroup;
+			children = (
+				02D877091EF6F5ED00F3E3CD /* SCConnectSocketAPI.swift */,
+				02D8770A1EF6F5ED00F3E3CD /* SocketIOManager.swift */,
+			);
+			name = Socket;
+			sourceTree = "<group>";
+		};
+		02D876CA1EF6F0C100F3E3CD = {
+			isa = PBXGroup;
+			children = (
+				02D876D51EF6F0C100F3E3CD /* SC-Connect */,
+				02D876D41EF6F0C100F3E3CD /* Products */,
+				9BF6B8F02AC3972AD8F3ADD2 /* Pods */,
+				7F2D5895D7500158DD5A2620 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		02D876D41EF6F0C100F3E3CD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				02D876D31EF6F0C100F3E3CD /* SC-Connect.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		02D876D51EF6F0C100F3E3CD /* SC-Connect */ = {
+			isa = PBXGroup;
+			children = (
+				02D876EB1EF6F54100F3E3CD /* Models */,
+				02D876EC1EF6F54F00F3E3CD /* Views */,
+				02D876ED1EF6F55500F3E3CD /* Controllers */,
+				02D876EE1EF6F55B00F3E3CD /* Assets */,
+				02D876EF1EF6F58A00F3E3CD /* Supporting Files */,
+			);
+			path = "SC-Connect";
+			sourceTree = "<group>";
+		};
+		02D876EB1EF6F54100F3E3CD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				02D877291EF6F5FF00F3E3CD /* LocationRow.swift */,
+				02D876F21EF6F5CD00F3E3CD /* Model Objects */,
+				02D876F11EF6F5C800F3E3CD /* API */,
+				02D876F01EF6F5B900F3E3CD /* Managers */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		02D876EC1EF6F54F00F3E3CD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				02D8772B1EF6F61800F3E3CD /* SlackMessageTableViewCell.swift */,
+				02D8772C1EF6F61800F3E3CD /* SlackMessageTableViewCell.xib */,
+				02D8772D1EF6F61800F3E3CD /* SlackPhotoMessageTableViewCell.swift */,
+				02D8772E1EF6F61800F3E3CD /* SlackPhotoMessageTableViewCell.xib */,
+				02D8772F1EF6F61800F3E3CD /* TagPreviewTableViewCell.swift */,
+				02D877301EF6F61800F3E3CD /* ColorPickerTableViewCell.swift */,
+				02D877311EF6F61800F3E3CD /* CheckInButtonTableViewCell.swift */,
+				02D877321EF6F61800F3E3CD /* EventInfoTableViewCell.swift */,
+				02D877331EF6F61800F3E3CD /* MapTableViewCell.swift */,
+				02D877341EF6F61800F3E3CD /* SportsTableViewCell.swift */,
+				02D877351EF6F61800F3E3CD /* FanCamImageCollectionViewCell.swift */,
+				02D877361EF6F61800F3E3CD /* HomepageImageButton.swift */,
+				02D877371EF6F61800F3E3CD /* ClubInfoTableViewCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		02D876ED1EF6F55500F3E3CD /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				02D877451EF6F64B00F3E3CD /* WelcomeViewController.swift */,
+				02D877461EF6F64B00F3E3CD /* SignInInfoViewController.swift */,
+				02D877471EF6F64B00F3E3CD /* NotificationsInfoViewController.swift */,
+				02D877481EF6F64B00F3E3CD /* BasicUsageViewController.swift */,
+				02D877491EF6F64B00F3E3CD /* NavigationViewController.swift */,
+				02D8774A1EF6F64B00F3E3CD /* HomepageViewController.swift */,
+				02D8774B1EF6F64B00F3E3CD /* TagBrowserViewController.swift */,
+				02D8774C1EF6F64B00F3E3CD /* TagSearchViewController.swift */,
+				02D8774D1EF6F64B00F3E3CD /* TagInfoViewController.swift */,
+				02D8774E1EF6F64B00F3E3CD /* SlackMessagesViewController.swift */,
+				02D8774F1EF6F64B00F3E3CD /* MediaUploadViewController.swift */,
+				02D877501EF6F64B00F3E3CD /* EventBrowserViewController.swift */,
+				02D877511EF6F64B00F3E3CD /* EventInfoViewController.swift */,
+				02D877521EF6F64B00F3E3CD /* CheckedInListViewController.swift */,
+				02D877531EF6F64B00F3E3CD /* PhotoDisplayViewController.swift */,
+				02D877541EF6F64B00F3E3CD /* SportsTableViewController.swift */,
+				02D877551EF6F64B00F3E3CD /* SportsSelectionTableViewController.swift */,
+				02D877561EF6F64B00F3E3CD /* SettingsTableViewController.swift */,
+				02D877571EF6F64B00F3E3CD /* GraduationYearSelectedTableViewController.swift */,
+				02D877581EF6F64B00F3E3CD /* AboutTableViewController.swift */,
+				02D877591EF6F64B00F3E3CD /* FanCamCollectionViewController.swift */,
+				02D8775A1EF6F64B00F3E3CD /* FanCamMediaUploadViewController.swift */,
+				02D8775B1EF6F64B00F3E3CD /* WebViewController.swift */,
+				02D8775C1EF6F64B00F3E3CD /* ClubMeetingsTableViewController.swift */,
+				02D8775D1EF6F64B00F3E3CD /* DayOfTheWeekSelectionTableViewController.swift */,
+				02D8775E1EF6F64B00F3E3CD /* ClubInfoTableViewController.swift */,
+				02D8775F1EF6F64B00F3E3CD /* ModeratorTableViewController.swift */,
+				02D877601EF6F64B00F3E3CD /* CreateEventViewController.swift */,
+				02D877611EF6F64B00F3E3CD /* FlaggedMessagesTableViewController.swift */,
+				02D877621EF6F64B00F3E3CD /* ManageClubsTableViewController.swift */,
+				02D877631EF6F64B00F3E3CD /* CreateClubViewController.swift */,
+				02D877641EF6F64B00F3E3CD /* EditClubViewController.swift */,
+				02D877651EF6F64B00F3E3CD /* ManageTagsTableViewController.swift */,
+				02D877661EF6F64B00F3E3CD /* CreateTagViewController.swift */,
+				02D877671EF6F64B00F3E3CD /* AddModeratorViewController.swift */,
+				02D877681EF6F64B00F3E3CD /* ManageModeratorsTableViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		02D876EE1EF6F55B00F3E3CD /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				02D8778D1EF6F65800F3E3CD /* Logging.swift */,
+				02D8778E1EF6F65800F3E3CD /* Constants.swift */,
+				02D8778F1EF6F65800F3E3CD /* AppDelegate.swift */,
+				02D877901EF6F65800F3E3CD /* Helper.swift */,
+				02D876DA1EF6F0C100F3E3CD /* Main.storyboard */,
+				02D877951EF6F66B00F3E3CD /* Assets.xcassets */,
+				02D876DF1EF6F0C100F3E3CD /* LaunchScreen.storyboard */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		02D876EF1EF6F58A00F3E3CD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				02D876E81EF6F13700F3E3CD /* SC-Connect.entitlements */,
+				0290E0AE1EF6F80B002D6768 /* GoogleService-Info.plist */,
+				02D876E21EF6F0C100F3E3CD /* Info.plist */,
+			);
+			name = "Supporting Files";
+			path = ..;
+			sourceTree = "<group>";
+		};
+		02D876F01EF6F5B900F3E3CD /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				02D876F31EF6F5DE00F3E3CD /* GoogleCalendarManager.swift */,
+				02D876F41EF6F5DE00F3E3CD /* GoogleManager.swift */,
+				02D876F51EF6F5DE00F3E3CD /* GraduationYearManager.swift */,
+				02D876F61EF6F5DE00F3E3CD /* JWTManager.swift */,
+				02D876F71EF6F5DF00F3E3CD /* SubscriptionsManager.swift */,
+				02D876F81EF6F5DF00F3E3CD /* UserManager.swift */,
+				02D876F91EF6F5DF00F3E3CD /* AWSManager.swift */,
+				02D876FA1EF6F5DF00F3E3CD /* MessagesManager.swift */,
+				02D876FB1EF6F5DF00F3E3CD /* InAppNotificationManager.swift */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+		02D876F11EF6F5C800F3E3CD /* API */ = {
+			isa = PBXGroup;
+			children = (
+				02D877051EF6F5ED00F3E3CD /* SCConnectAPI.swift */,
+				0220718F1EF89716008973AE /* REST */,
+				022071901EF89727008973AE /* Socket */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		02D876F21EF6F5CD00F3E3CD /* Model Objects */ = {
+			isa = PBXGroup;
+			children = (
+				02D877111EF6F5F800F3E3CD /* MessageModels.swift */,
+				02D877121EF6F5F800F3E3CD /* TagModel.swift */,
+				02D877131EF6F5F800F3E3CD /* GoogleUserModel.swift */,
+				02D877141EF6F5F800F3E3CD /* EventModel.swift */,
+				02D877151EF6F5F800F3E3CD /* JSONWebTokenModel.swift */,
+				02D877161EF6F5F800F3E3CD /* LeaderboardScoreModel.swift */,
+				02D877171EF6F5F800F3E3CD /* ScheduledSportsGameModel.swift */,
+				02D877181EF6F5F800F3E3CD /* SportsGameResultModel.swift */,
+				02D877191EF6F5F800F3E3CD /* ModeratorModel.swift */,
+				02D8771A1EF6F5F800F3E3CD /* FanCamImageRecordModel.swift */,
+				02D8771B1EF6F5F800F3E3CD /* ClubModel.swift */,
+				02D8771C1EF6F5F800F3E3CD /* LeaderboardTotalModel.swift */,
+			);
+			name = "Model Objects";
+			sourceTree = "<group>";
+		};
+		7F2D5895D7500158DD5A2620 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EDE6137A4CEC6EA096CEE44E /* Pods_SC_Connect.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9BF6B8F02AC3972AD8F3ADD2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				276A471D62E046CE1E856BF4 /* Pods-SC-Connect.debug.xcconfig */,
+				4D443B977D2A6AAC9EDA40D7 /* Pods-SC-Connect.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		02D876D21EF6F0C100F3E3CD /* SC-Connect */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02D876E51EF6F0C100F3E3CD /* Build configuration list for PBXNativeTarget "SC-Connect" */;
+			buildPhases = (
+				A0ABFDD768FC44A60B732236 /* [CP] Check Pods Manifest.lock */,
+				02D876CF1EF6F0C100F3E3CD /* Sources */,
+				02D876D01EF6F0C100F3E3CD /* Frameworks */,
+				02D876D11EF6F0C100F3E3CD /* Resources */,
+				4F9E2023461E54D81FF4727C /* [CP] Embed Pods Frameworks */,
+				AE50F5C862B9DA3A6DAC1D1A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SC-Connect";
+			productName = "SC-Connect";
+			productReference = 02D876D31EF6F0C100F3E3CD /* SC-Connect.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		02D876CB1EF6F0C100F3E3CD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Shorecrest Computer Science";
+				TargetAttributes = {
+					02D876D21EF6F0C100F3E3CD = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = W39J5R2CML;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 02D876CE1EF6F0C100F3E3CD /* Build configuration list for PBXProject "SC-Connect" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 02D876CA1EF6F0C100F3E3CD;
+			productRefGroup = 02D876D41EF6F0C100F3E3CD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				02D876D21EF6F0C100F3E3CD /* SC-Connect */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		02D876D11EF6F0C100F3E3CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02D876E11EF6F0C100F3E3CD /* LaunchScreen.storyboard in Resources */,
+				02D8773B1EF6F61800F3E3CD /* SlackPhotoMessageTableViewCell.xib in Resources */,
+				02D876DC1EF6F0C100F3E3CD /* Main.storyboard in Resources */,
+				02D877391EF6F61800F3E3CD /* SlackMessageTableViewCell.xib in Resources */,
+				02D877961EF6F66B00F3E3CD /* Assets.xcassets in Resources */,
+				0290E0AF1EF6F80B002D6768 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4F9E2023461E54D81FF4727C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SC-Connect/Pods-SC-Connect-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A0ABFDD768FC44A60B732236 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AE50F5C862B9DA3A6DAC1D1A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SC-Connect/Pods-SC-Connect-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		02D876CF1EF6F0C100F3E3CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02D877821EF6F64B00F3E3CD /* ClubInfoTableViewController.swift in Sources */,
+				02D877761EF6F64B00F3E3CD /* CheckedInListViewController.swift in Sources */,
+				02D877231EF6F5F800F3E3CD /* ScheduledSportsGameModel.swift in Sources */,
+				02D877831EF6F64B00F3E3CD /* ModeratorTableViewController.swift in Sources */,
+				02D877691EF6F64B00F3E3CD /* WelcomeViewController.swift in Sources */,
+				02D877241EF6F5F800F3E3CD /* SportsGameResultModel.swift in Sources */,
+				02D877261EF6F5F800F3E3CD /* FanCamImageRecordModel.swift in Sources */,
+				02D877861EF6F64B00F3E3CD /* ManageClubsTableViewController.swift in Sources */,
+				02D877701EF6F64B00F3E3CD /* TagSearchViewController.swift in Sources */,
+				02D877281EF6F5F800F3E3CD /* LeaderboardTotalModel.swift in Sources */,
+				02D877871EF6F64B00F3E3CD /* CreateClubViewController.swift in Sources */,
+				02D877011EF6F5DF00F3E3CD /* UserManager.swift in Sources */,
+				02D8777C1EF6F64B00F3E3CD /* AboutTableViewController.swift in Sources */,
+				02D877891EF6F64B00F3E3CD /* ManageTagsTableViewController.swift in Sources */,
+				02D8778A1EF6F64B00F3E3CD /* CreateTagViewController.swift in Sources */,
+				02D877881EF6F64B00F3E3CD /* EditClubViewController.swift in Sources */,
+				02D8776C1EF6F64B00F3E3CD /* BasicUsageViewController.swift in Sources */,
+				02D877101EF6F5ED00F3E3CD /* SocketIOManager.swift in Sources */,
+				02D877751EF6F64B00F3E3CD /* EventInfoViewController.swift in Sources */,
+				02D8777B1EF6F64B00F3E3CD /* GraduationYearSelectedTableViewController.swift in Sources */,
+				02D8770C1EF6F5ED00F3E3CD /* SCConnectRESTAPI.swift in Sources */,
+				02D877251EF6F5F800F3E3CD /* ModeratorModel.swift in Sources */,
+				02D8773F1EF6F61800F3E3CD /* EventInfoTableViewCell.swift in Sources */,
+				02D876FE1EF6F5DF00F3E3CD /* GraduationYearManager.swift in Sources */,
+				02D8776D1EF6F64B00F3E3CD /* NavigationViewController.swift in Sources */,
+				02D876FD1EF6F5DF00F3E3CD /* GoogleManager.swift in Sources */,
+				02D8776F1EF6F64B00F3E3CD /* TagBrowserViewController.swift in Sources */,
+				02D8773C1EF6F61800F3E3CD /* TagPreviewTableViewCell.swift in Sources */,
+				02D877041EF6F5DF00F3E3CD /* InAppNotificationManager.swift in Sources */,
+				02D877811EF6F64B00F3E3CD /* DayOfTheWeekSelectionTableViewController.swift in Sources */,
+				02D877771EF6F64B00F3E3CD /* PhotoDisplayViewController.swift in Sources */,
+				02D877031EF6F5DF00F3E3CD /* MessagesManager.swift in Sources */,
+				02D8777D1EF6F64B00F3E3CD /* FanCamCollectionViewController.swift in Sources */,
+				02D877851EF6F64B00F3E3CD /* FlaggedMessagesTableViewController.swift in Sources */,
+				02D877721EF6F64B00F3E3CD /* SlackMessagesViewController.swift in Sources */,
+				02D877271EF6F5F800F3E3CD /* ClubModel.swift in Sources */,
+				02D877421EF6F61800F3E3CD /* FanCamImageCollectionViewCell.swift in Sources */,
+				02D8773A1EF6F61800F3E3CD /* SlackPhotoMessageTableViewCell.swift in Sources */,
+				02D877201EF6F5F800F3E3CD /* EventModel.swift in Sources */,
+				02D877791EF6F64B00F3E3CD /* SportsSelectionTableViewController.swift in Sources */,
+				02D877211EF6F5F800F3E3CD /* JSONWebTokenModel.swift in Sources */,
+				02D8771F1EF6F5F800F3E3CD /* GoogleUserModel.swift in Sources */,
+				02D8771D1EF6F5F800F3E3CD /* MessageModels.swift in Sources */,
+				02D8773E1EF6F61800F3E3CD /* CheckInButtonTableViewCell.swift in Sources */,
+				02D8771E1EF6F5F800F3E3CD /* TagModel.swift in Sources */,
+				02D877841EF6F64B00F3E3CD /* CreateEventViewController.swift in Sources */,
+				02D8778B1EF6F64B00F3E3CD /* AddModeratorViewController.swift in Sources */,
+				02D877381EF6F61800F3E3CD /* SlackMessageTableViewCell.swift in Sources */,
+				02D877711EF6F64B00F3E3CD /* TagInfoViewController.swift in Sources */,
+				02D877941EF6F65800F3E3CD /* Helper.swift in Sources */,
+				02D8777A1EF6F64B00F3E3CD /* SettingsTableViewController.swift in Sources */,
+				02D8776A1EF6F64B00F3E3CD /* SignInInfoViewController.swift in Sources */,
+				02D876FC1EF6F5DF00F3E3CD /* GoogleCalendarManager.swift in Sources */,
+				02D876FF1EF6F5DF00F3E3CD /* JWTManager.swift in Sources */,
+				02D8777E1EF6F64B00F3E3CD /* FanCamMediaUploadViewController.swift in Sources */,
+				02D877441EF6F61800F3E3CD /* ClubInfoTableViewCell.swift in Sources */,
+				02D8770F1EF6F5ED00F3E3CD /* SCConnectSocketAPI.swift in Sources */,
+				02D8778C1EF6F64B00F3E3CD /* ManageModeratorsTableViewController.swift in Sources */,
+				02D877001EF6F5DF00F3E3CD /* SubscriptionsManager.swift in Sources */,
+				02D8773D1EF6F61800F3E3CD /* ColorPickerTableViewCell.swift in Sources */,
+				02D877911EF6F65800F3E3CD /* Logging.swift in Sources */,
+				02D877931EF6F65800F3E3CD /* AppDelegate.swift in Sources */,
+				02D877731EF6F64B00F3E3CD /* MediaUploadViewController.swift in Sources */,
+				02D877741EF6F64B00F3E3CD /* EventBrowserViewController.swift in Sources */,
+				02D8770D1EF6F5ED00F3E3CD /* AuthNetworkAPI.swift in Sources */,
+				02D877801EF6F64B00F3E3CD /* ClubMeetingsTableViewController.swift in Sources */,
+				02D8776B1EF6F64B00F3E3CD /* NotificationsInfoViewController.swift in Sources */,
+				02D877021EF6F5DF00F3E3CD /* AWSManager.swift in Sources */,
+				02D877411EF6F61800F3E3CD /* SportsTableViewCell.swift in Sources */,
+				02D877921EF6F65800F3E3CD /* Constants.swift in Sources */,
+				02D8770B1EF6F5ED00F3E3CD /* SCConnectAPI.swift in Sources */,
+				02D877401EF6F61800F3E3CD /* MapTableViewCell.swift in Sources */,
+				02D8772A1EF6F5FF00F3E3CD /* LocationRow.swift in Sources */,
+				02D877221EF6F5F800F3E3CD /* LeaderboardScoreModel.swift in Sources */,
+				02D8770E1EF6F5ED00F3E3CD /* NetworkAPI.swift in Sources */,
+				02D877431EF6F61800F3E3CD /* HomepageImageButton.swift in Sources */,
+				02D8777F1EF6F64B00F3E3CD /* WebViewController.swift in Sources */,
+				02D8776E1EF6F64B00F3E3CD /* HomepageViewController.swift in Sources */,
+				02D877781EF6F64B00F3E3CD /* SportsTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		02D876DA1EF6F0C100F3E3CD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				02D876DB1EF6F0C100F3E3CD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		02D876DF1EF6F0C100F3E3CD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				02D876E01EF6F0C100F3E3CD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		02D876E31EF6F0C100F3E3CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		02D876E41EF6F0C100F3E3CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		02D876E61EF6F0C100F3E3CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 276A471D62E046CE1E856BF4 /* Pods-SC-Connect.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "SC-Connect/SC-Connect.entitlements";
+				DEVELOPMENT_TEAM = W39J5R2CML;
+				INFOPLIST_FILE = "SC-Connect/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shorecrestconnect.SC-Connect-V2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		02D876E71EF6F0C100F3E3CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D443B977D2A6AAC9EDA40D7 /* Pods-SC-Connect.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "SC-Connect/SC-Connect.entitlements";
+				DEVELOPMENT_TEAM = W39J5R2CML;
+				INFOPLIST_FILE = "SC-Connect/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shorecrestconnect.SC-Connect-V2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		02D876CE1EF6F0C100F3E3CD /* Build configuration list for PBXProject "SC-Connect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02D876E31EF6F0C100F3E3CD /* Debug */,
+				02D876E41EF6F0C100F3E3CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02D876E51EF6F0C100F3E3CD /* Build configuration list for PBXNativeTarget "SC-Connect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02D876E61EF6F0C100F3E3CD /* Debug */,
+				02D876E71EF6F0C100F3E3CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 02D876CB1EF6F0C100F3E3CD /* Project object */;
+}

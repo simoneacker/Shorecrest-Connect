@@ -4,7 +4,8 @@ The Shorecrest-Connect App is an iOS application that will offer students with m
 
 
 ## Getting Started
-1. AWS Setup
+1. Clone the repository. Ex. "git clone https://github.com/simoneacker/Shorecrest-Connect.git"
+2. Setup the server on AWS as follows:
    - S3:
       - Bucket for messages testbed system
       - Bucket hosting static files for www.shorecrestconnect.com

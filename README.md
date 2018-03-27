@@ -4,12 +4,12 @@ The Shorecrest-Connect App is an iOS application that will offer students with m
 
 
 ## Getting Started
-
-### S3:
-- Bucket for messages testbed system
-- Bucket hosting static files for www.shorecrestconnect.com
-    - Bucket configured with static hosting, a name that matches the web address, and a policy that makes all objects get-able
-    - Static website is not encrypted currently
+1. AWS Setup
+   a.S3:
+        i. Bucket for messages testbed system
+        ii. Bucket hosting static files for www.shorecrestconnect.com
+            - Bucket configured with static hosting, a name that matches the web address, and a policy that makes all objects get-able
+            - Static website is not encrypted currently
 
 ### RDS:
 - MySQL database (currently setup with scconnect database for messages testbed system)

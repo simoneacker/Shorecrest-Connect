@@ -1,6 +1,6 @@
 # Shorecrest-Connect App
 
-The Shorecrest-Connect App is an iOS application that will offer students with many features related to ASB and extracurricular activities. The app was developed by Simon Acker with help from the Computer Science Club at Shorecrest High School.
+The Shorecrest-Connect App is an iOS application built for the purpose of easy inter-student communication and access to activities information. The app was developed by Simon Acker with help from the Computer Science Club at Shorecrest High School.
 
 
 ## Getting Started

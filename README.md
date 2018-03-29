@@ -7,10 +7,7 @@ The Shorecrest-Connect App is an iOS application built for the purpose of easy i
 1. Clone the repository. Ex. "git clone https://github.com/simoneacker/Shorecrest-Connect.git"
 2. Setup the server on AWS as follows:
    - S3:
-      - Bucket for messages testbed system
-      - Bucket hosting static files for www.shorecrestconnect.com
-         - Bucket configured with static hosting, a name that matches the web address, and a policy that makes all objects get-able
-         - Static website is not encrypted currently
+      - Bucket for messages system (stores media uploaded to messages)
    - RDS:
       - MySQL database (currently setup with scconnect database for messages testbed system)
    - Elastic Beanstalk (EB):
@@ -23,9 +20,8 @@ The Shorecrest-Connect App is an iOS application built for the purpose of easy i
    - Route 53:
       - Registration for shorecrestconnect.com
       - One record set directing api.shorecrestconnect.com to the EB application endpoint
-      - One record set directing www.shorecrestconnect.com to S3 static endpoint
    - Cognito:
-      - One identity pool (under federated identities) used to upload/download media from iOS messages testbed to S3 bucket
+      - One identity pool (under federated identities) used to upload/download media from iOS messages to S3 bucket
 
 ## How to Contribute
 
